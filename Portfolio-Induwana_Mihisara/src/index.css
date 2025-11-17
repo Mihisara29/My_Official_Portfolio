@@ -18,7 +18,7 @@
   }
     @font-face {
     font-family: "aeonik";
-    src: url("/fonts/Aeonik-Black.ttf") format("truetype");
+    src: url("/Portfolio-Induwana_Mihisara/public/fonts/Aeonik-Black.ttf") format("truetype");
     font-weight: 700;
   }
 }
@@ -68,16 +68,16 @@
     width: 700px;
     height: 700px;
     border-radius: 50%;
-    filter: blur(200px);
+    filter: blur(300px);
   }
   .sphere-1 {
-    background: radial-gradient(circle, #ff28d5, #ff28d5);
+    background: radial-gradient(circle, #000000, #1c34ff);
     top: -100px;
     left: 300px;
     animation: wander-left 10s ease-in-out infinite;
   }
   .sphere-2 {
-    background: radial-gradient(circle, #1c34ff, #1c34ff);
+    background: radial-gradient(circle, #000000,  #000000);
     top: 100px;
     right: 300px;
     animation: wander-right 12s ease-in-out infinite;
@@ -91,15 +91,16 @@
     filter: blur(200px);
   }
   .about-sphere-1 {
-    background: radial-gradient(circle, #ff28d5, #ff28d5);
+    background: radial-gradient(circle, #1c34ff, #000000);
     bottom: 300px;
     right: 150px;
     animation: wander-left 10s ease-in-out infinite;
   }
   .about-sphere-2 {
-    background: radial-gradient(circle, #1c34ff, #1c34ff);
+    background: radial-gradient(circle, #000000,#000000);
     bottom: 100px;
     right: 50px;
+    animation: wander-right 10s ease-in-out infinite;
   }
   .tech-stack-gradient-left-box {
     background: rgb(11, 6, 32);
@@ -292,8 +293,7 @@ html, body{
   width: 100dvw;
   overflow-x: hidden;
   scroll-behavior: smooth;
-  background-color: var(--color-black-100);
-  color: var(--color-primary);
+  background-color: #000000;  color: var(--color-primary);
 }
 
 section{
