@@ -1,8 +1,11 @@
 import React from 'react'
+import Hero from './sections/Hero'
 
 const App = () => {
   return (
-    <div className='text-blue-50 font-black text-3xl'>App</div>
+    <div className="div">
+      <Hero/>
+    </div>
   )
 }
 
