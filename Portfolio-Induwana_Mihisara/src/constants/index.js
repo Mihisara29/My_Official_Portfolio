@@ -39,7 +39,7 @@ const bentoSocialLinks = [
   },
 ];
 
-const iconsList = [
+const iconsListSe = [
   {
     name: "html",
     image: "/images/html.svg",
@@ -57,12 +57,8 @@ const iconsList = [
     image: "/images/react.svg",
   },
   {
-    name: "typescript",
-    image: "/images/ts.svg",
-  },
-  {
     name: "github",
-    image: "/images/github.svg",
+    image: "/images/git.svg",
   },
   {
     name: "gsap",
@@ -73,12 +69,127 @@ const iconsList = [
     image: "/images/threejs.svg",
   },
   {
-    name: "figma",
-    image: "/images/figma.svg",
+    name: "vitejs",
+    image: "/images/vitejs.svg",
   },
+  {
+    name: "nodejs",
+    image: "/images/nodejs.svg",
+  },
+  {
+    name: "phpjs",
+    image: "/images/php.svg",
+  },
+  {
+    name: "java",
+    image: "/images/java.svg",
+  },
+  {
+    name: "git",
+    image: "/images/git.svg",
+  },
+  {
+    name: "c",
+    image: "/images/c.svg",
+  },
+  {
+    name: "bootstrap",
+    image: "/images/bootstrap.svg",
+  },
+  {
+    name: "mongoDB",
+    image: "/images/mongoDB.svg",
+  },
+  {
+    name: "mongoDB",
+    image: "/images/postman.svg",
+  },
+  {
+    name: "express",
+    image: "/images/express.svg",
+  },
+  {
+    name: "spring",
+    image: "/images/spring.svg",
+  },
+  {
+    name: "tailwindCSS",
+    image: "/images/tailwindCSS.svg",
+  },
+  {
+    name: "mhySQL",
+    image: "/images/mySQL.svg",
+  },
+  {
+    name: "jUnit",
+    image: "/images/jUnit.svg",
+  },
+];
+
+const iconsListDevOps = [
   {
     name: "aws",
     image: "/images/aws.svg",
+  },
+  {
+    name: "eksCloud",
+    image: "/images/eksCloud.svg",
+  },
+  {
+    name: "fargate",
+    image: "/images/fargate.svg",
+  },
+  {
+    name: "s3",
+    image: "/images/s3.svg",
+  },
+  {
+    name: "vpc",
+    image: "/images/vpc.svg",
+  },
+  {
+    name: "ec2",
+    image: "/images/ec2.svg",
+  },
+  {
+    name: "tailwindCSS",
+    image: "/images/tailwindCSS.svg",
+  },
+  {
+    name: "argoCD",
+    image: "/images/argoCD.svg",
+  },
+  {
+    name: "docker",
+    image: "/images/docker.svg",
+  },
+  {
+    name: "jenkins",
+    image: "/images/jenkins.svg",
+  },
+  {
+    name: "kubernetes",
+    image: "/images/kubernetes.svg",
+  },
+  {
+    name: "linux",
+    image: "/images/linux.svg",
+  },
+  {
+    name: "putty",
+    image: "/images/puTTY.svg",
+  },
+  {
+    name: "sonarQube",
+    image: "/images/sonarQube.svg",
+  },
+  {
+    name: "python",
+    image: "/images/python.svg",
+  },
+  {
+    name: "github",
+    image: "/images/github.png",
   },
 ];
 
@@ -177,7 +288,8 @@ const footerIconsList = [
 export {
   navItems,
   bentoSocialLinks,
-  iconsList,
+  iconsListSe,
+  iconsListDevOps,
   slides,
   testimonials,
   footerIconsList,

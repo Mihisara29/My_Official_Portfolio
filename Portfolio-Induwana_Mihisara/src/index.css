@@ -136,7 +136,7 @@
     animation: marquee 60s linear infinite;
   }
   .marquee-item {
-    float: left;
+    float: right
   }
   .marquee-item:after {
     content: "";
@@ -157,6 +157,18 @@
   button:focus::after {
     animation: shine 1s forwards;
   }
+
+  /* reverse marquee */
+.marquee-box-reverse {
+  display: flex;
+  align-items: center;
+  width: 200%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  animation: marquee-reverse 60s linear infinite; /* Use the new animation */
+}
+
   /* projects */
   .projects-gradient-sphere {
     position: absolute;
@@ -266,6 +278,15 @@
   }
   100% {
     left: -100%;
+  }
+}
+
+@keyframes marquee-reverse {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0%;
   }
 }
 
