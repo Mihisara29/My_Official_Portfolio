@@ -23,11 +23,6 @@ const navItems = [
 
 const bentoSocialLinks = [
   {
-    name: "Facebook",
-    href: "https://www.facebook.com/",
-    icon: "/images/fb.svg",
-  },
-  {
     name: "Instagram",
     href: "https://www.facebook.com/",
     icon: "/images/insta.svg",

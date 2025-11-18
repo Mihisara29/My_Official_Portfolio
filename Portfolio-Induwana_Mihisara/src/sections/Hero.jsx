@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="w-screen h-dvh  relative text-white-50 px-5"
+      className="w-screen h-dvh  relative text-white-50 px-10"
     >
           <GradientSpheres sphere1Class={"gradient-sphere sphere-1"} sphere2Class={"gradient-sphere sphere-2"} />  
       <div className="w-full h-full flex-center">
@@ -30,7 +30,7 @@ const Hero = () => {
               </div>
               <div className="flex flex-col items-end">
                 <img src="images/shape.svg" alt="shape" />
-                <h1 className="font-bold md:text-5xl text-5xl">SE & DevOps</h1>
+                <h1 className="font-bold md:text-5xl text-4xl">Se&DevOps</h1>
               </div>
             </div>
           </div>
