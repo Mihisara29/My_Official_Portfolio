@@ -4,6 +4,7 @@ import About from './sections/About'
 import GradientSpheres from './components/GradientSpheres'
 import TechStack from './sections/TechStack'
 import Project from './sections/Project'
+import Contact from './sections/Contact'
 
 
 const App = () => {
@@ -13,6 +14,7 @@ const App = () => {
       <About/>
       <TechStack/>
       <Project/>
+      <Contact/>
     </div>
   )
 }
