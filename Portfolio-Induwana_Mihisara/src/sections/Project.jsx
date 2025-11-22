@@ -10,7 +10,7 @@ import { DevOpsSlides } from '../constants'
 
 const Project = () => {
   return (
-    <section className='w-full h-full flex-center relative' id='projects'>
+    <section className='w-full h-full flex-center relative md:my-60 my-30' id='projects'>
       <GradientSpheres 
         sphere1Class={"projects-gradient-sphere projects-sphere-1"}
         sphere2Class={"projects-gradient-sphere projects-sphere-2"}

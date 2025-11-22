@@ -6,8 +6,8 @@ import { iconsListDevOps } from "../constants";
 
 const TechStack = () => {
   return (
-    <div className="w-full h-full">
-      <div className="w-full md:my-40 my-20">
+    <div className="w-full h-full md:my-60 my-20">
+      <div className="w-full ">
         <div className="container px-10 md:mb-10 mb-0">
           <TitleHeader
             title="SOFTWARE ENGINEERING"

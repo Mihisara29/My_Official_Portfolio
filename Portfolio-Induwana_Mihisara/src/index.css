@@ -24,6 +24,15 @@
 }
 
 @layer components {
+
+  .label{
+   @apply block text-white md:text-2xl font-semibold mb-2
+  }
+
+  .input{
+    @apply bg-black-300 w-full font-light md:text-base text-sm placeholder:text-[#fafafa50] rounded-md border-none px-4 py-4
+  }
+  
   .gradient-title {
     background: linear-gradient(
       180deg,
