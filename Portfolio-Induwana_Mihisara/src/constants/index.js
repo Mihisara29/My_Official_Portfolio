@@ -193,41 +193,87 @@ const iconsListDevOps = [
   },
 ];
 
-const slides = [
+const DevOpsSlides = [
+  {
+    id: 5,
+    title: "GitHub Actions",
+    img: "/images/github-action.jpg",
+    link: "https://www.linkedin.com/posts/induwara-mihisara-9572712a4_githubactions-aws-python-activity-7388477287333097473-_i9J?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEldmxMBnPOO2hlV1Sy_92H2m4wVZYUOrNU"
+  },
   {
     id: 1,
-    title: "Sofi",
-    img: "/images/p1.png",
+    title: "CI/CD Automation",
+    img: "/images/CI-CD-Automated.jpg",
+    link: "https://www.linkedin.com/posts/induwara-mihisara-9572712a4_devops-cicd-jenkins-activity-7395197826609168384-l6mZ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEldmxMBnPOO2hlV1Sy_92H2m4wVZYUOrNU"
   },
   {
     id: 2,
-    title: "Jasmina",
-    img: "/images/p2.png",
+    title: "Scalable & Secure Application",
+    img: "/images/aws-scalable-secure.jpg",
+    link: "https://www.linkedin.com/posts/induwara-mihisara-9572712a4_aws-cloudcomputing-vpc-activity-7379622491088072704-BGyF?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEldmxMBnPOO2hlV1Sy_92H2m4wVZYUOrNU"
   },
   {
     id: 3,
-    title: "d.tampe",
-    img: "/images/p3.png",
+    title: "Dockerized FullStack Application",
+    img: "/images/docker-compose-mern-stack.jpg",
+    link: "https://www.linkedin.com/posts/induwara-mihisara-9572712a4_mern-docker-aws-activity-7390455609994907648-IK91?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEldmxMBnPOO2hlV1Sy_92H2m4wVZYUOrNU"
   },
   {
     id: 4,
-    title: "Blimp.gr",
-    img: "/images/p4.png",
+    title: "2048 App on AWS-EKS",
+    img: "/images/EKS-deployment.jpg",
+    link: "https://www.linkedin.com/posts/induwara-mihisara-9572712a4_aws-eks-kubernetes-activity-7394767186344513536-DGLB?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEldmxMBnPOO2hlV1Sy_92H2m4wVZYUOrNU"
   },
   {
     id: 5,
-    title: "Hawk Style Design",
-    img: "/images/p5.png",
+    title: "GitHub Actions",
+    img: "/images/github-action.jpg",
+    link: "https://www.linkedin.com/posts/induwara-mihisara-9572712a4_githubactions-aws-python-activity-7388477287333097473-_i9J?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEldmxMBnPOO2hlV1Sy_92H2m4wVZYUOrNU"
+  },
+];
+
+const SeSlides = [
+  {
+    id: 6,
+    title: "Food Delivery System",
+    img: "/images/food_delivery_system.png",
+    link: "https://www.linkedin.com/posts/induwara-mihisara-9572712a4_reactjs-springboot-mongodb-activity-7345539785383452672-8CDA?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEldmxMBnPOO2hlV1Sy_92H2m4wVZYUOrNU"
+  },
+  {
+    id: 1,
+    title: "Language Learning Platform",
+    img: "/images/language_learninh_platform.png",
+    link: "https://www.linkedin.com/posts/induwara-mihisara-9572712a4_just-dropped-my-latest-project-a-real-time-activity-7347709336007098368-d4CV?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEldmxMBnPOO2hlV1Sy_92H2m4wVZYUOrNU"
+  },
+  {
+    id: 2,
+    title: "Information Security Project",
+    img: "/images/info-security-project.png",
+    link: "https://www.linkedin.com/posts/induwara-mihisara-9572712a4_webdevelopment-ecommerce-cybersecurity-activity-7370027231512948736-fG0c?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEldmxMBnPOO2hlV1Sy_92H2m4wVZYUOrNU"
+  },
+  {
+    id: 3,
+    title: "Todo Mobile App",
+    img: "/images/todo_mobile_app.png",
+    link: "https://www.linkedin.com/posts/induwara-mihisara-9572712a4_reactnative-mobiledevelopment-todoapp-activity-7322163965831106560-ClQH?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEldmxMBnPOO2hlV1Sy_92H2m4wVZYUOrNU"
+  },
+  {
+    id: 4,
+    title: "F.M.S.",
+    img: "/images/fuel_management_system.png",
+    link: "https://www.linkedin.com/posts/induwara-mihisara-9572712a4_fuelmanagementsystem-reactjs-reactnative-activity-7321031619266433024-g049?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEldmxMBnPOO2hlV1Sy_92H2m4wVZYUOrNU"
+  },
+  {
+    id: 5,
+    title: "Old Portfolio",
+    img: "/images/old_portfolio.png",
+    link: "https://www.linkedin.com/posts/induwara-mihisara-9572712a4_webdevelopment-portfoliowebsite-javascript-activity-7315692491867860992-6u-B?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEldmxMBnPOO2hlV1Sy_92H2m4wVZYUOrNU"
   },
   {
     id: 6,
-    title: "Lewis",
-    img: "/images/p6.png",
-  },
-  {
-    id: 7,
-    title: "Sofi",
-    img: "/images/p1.png",
+    title: "Food Delivery System",
+    img: "/images/food_delivery_system.png",
+    link: "https://www.linkedin.com/posts/induwara-mihisara-9572712a4_reactjs-springboot-mongodb-activity-7345539785383452672-8CDA?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEldmxMBnPOO2hlV1Sy_92H2m4wVZYUOrNU"
   },
 ];
 
@@ -290,7 +336,8 @@ export {
   bentoSocialLinks,
   iconsListSe,
   iconsListDevOps,
-  slides,
+  SeSlides,
+  DevOpsSlides,
   testimonials,
   footerIconsList,
 };

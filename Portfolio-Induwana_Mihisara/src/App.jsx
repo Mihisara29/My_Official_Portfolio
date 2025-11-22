@@ -3,6 +3,7 @@ import Hero from './sections/Hero'
 import About from './sections/About'
 import GradientSpheres from './components/GradientSpheres'
 import TechStack from './sections/TechStack'
+import Project from './sections/Project'
 
 
 const App = () => {
@@ -11,6 +12,7 @@ const App = () => {
       <Hero/>
       <About/>
       <TechStack/>
+      <Project/>
     </div>
   )
 }
