@@ -44,7 +44,7 @@ const About = () => {
   }, []);
 
   return (
-    <section id="about" className="flex-center relative px-10 mb-30 md:mt-20 mt-10">
+    <section id="about" className="flex-center relative px-10 mb-30 md:mt-20 mt-10 scroll-mt-[70px]">
       <GradientSpheres
         sphere1Class={"about-gradient-sphere about-sphere-1"}
         sphere2Class={"about-gradient-sphere about-sphere-2"}
@@ -154,13 +154,20 @@ const About = () => {
               <div className="bg-black-300 rounded-2xl p-7  h-full group cursor-pointer flex align-items-center justify-center gap-5 transition-colors">
                 <div>
                   <div className="flex items-center h-full">
-                    <img src={item.icon} alt={item.icon} />
+                    <a href={item.href}
+                         target="_blank">
+                        <img src={item.icon} alt={item.icon} />
+                      </a>
                     <div className="group-hover:translate-x-2 group-hover:-translate-y-2 transition-transform">
-                      <img
+                      <a href={item.href}
+                         target="_blank"
+                      >
+                        <img
                         src="/images/arrowupright.svg"
                         alt="arrow-up"
                         className="md:scale-100 scale-50"
                       />
+                      </a>
                     </div>
                   </div>
                 </div>

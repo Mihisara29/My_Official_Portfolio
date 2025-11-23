@@ -6,7 +6,7 @@ import ContactExperience from '../components/ContactExperience'
 const Contact = () => {
   return (
     <section id='contact'
-             className='flex justify-center relative px-10'
+             className='flex justify-center relative px-10 scroll-mt-[70px]'
     >
       <div className="w-full h-full container md:my-0 my-10">
         <TitleHeader
