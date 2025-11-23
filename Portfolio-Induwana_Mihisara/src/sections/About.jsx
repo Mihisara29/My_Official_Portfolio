@@ -44,7 +44,7 @@ const About = () => {
   }, []);
 
   return (
-    <section id="about" className="flex-center relative px-10 mb-30">
+    <section id="about" className="flex-center relative px-10 mb-30 md:mt-20 mt-10">
       <GradientSpheres
         sphere1Class={"about-gradient-sphere about-sphere-1"}
         sphere2Class={"about-gradient-sphere about-sphere-2"}

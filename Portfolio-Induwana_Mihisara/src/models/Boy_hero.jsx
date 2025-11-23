@@ -4,17 +4,56 @@ Command: npx gltfjsx@6.5.3 boy_hero.glb -T
 Files: boy_hero.glb [854.42KB] > E:\My New Portfolio\Portfolio-Induwana_Mihisara\src\models\boy_hero-transformed.glb [387.55KB] (55%)
 */
 
-import React from 'react'
-import { useGraph } from '@react-three/fiber'
+import React, { useEffect, useRef, useState } from 'react'
+import { events, useGraph } from '@react-three/fiber'
 import { useGLTF } from '@react-three/drei'
 import { SkeletonUtils } from 'three-stdlib'
+import * as THREE from 'three'
+import {useGSAP} from "@gsap/react"
+import gsap from 'gsap'
 
-export function Model(props) {
+export function HeroBoy(props) {
   const { scene } = useGLTF('/models/boy_hero-transformed.glb')
   const clone = React.useMemo(() => SkeletonUtils.clone(scene), [scene])
   const { nodes, materials } = useGraph(clone)
+
+  const group = useRef();
+
+  const mouse = useRef(new THREE.Vector2());
+
+  const [isIntroAnimationDone,setIsIntroAnimationDone] = useState(false);
+
+  useGSAP(() => {
+
+    if(!isIntroAnimationDone){
+          gsap.fromTo(group.current.rotation, {y:Math.PI},{y:0, delay:0.5, duration:1.5, ease:"expo.inOut",
+      onComplete:() => {
+        setIsIntroAnimationDone(true);
+      },
+    });
+    }
+
+    if(isIntroAnimationDone){
+          const handleMouseMove = (event) => {
+      const { innerWidth, innerHeight} = window;
+
+      mouse.current.x = (event.clientX / innerWidth) * 2 - 1;
+      mouse.current.y = -(event.clientY / innerHeight) * 2 + 1;
+      const target = new THREE.Vector3(mouse.current.x, mouse.current.y, 1)
+      group.current.getObjectByName("Head")?.lookAt(target);
+      group.current.rotation.y = target.x * 0.5;
+
+    }
+
+    window.addEventListener("mousemove",handleMouseMove);
+
+    return () => window.removeEventListener("mousemove",handleMouseMove)
+    }
+
+  },[isIntroAnimationDone])
+
   return (
-    <group {...props} dispose={null}>
+    <group ref={group} {...props} dispose={null}>
       <primitive object={nodes.Hips} />
       <skinnedMesh geometry={nodes.Wolf3D_Hair.geometry} material={materials.Wolf3D_Hair} skeleton={nodes.Wolf3D_Hair.skeleton} />
       <skinnedMesh geometry={nodes.Wolf3D_Body.geometry} material={materials.Wolf3D_Body} skeleton={nodes.Wolf3D_Body.skeleton} />
