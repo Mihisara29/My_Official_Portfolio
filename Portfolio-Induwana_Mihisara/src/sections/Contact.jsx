@@ -1,6 +1,7 @@
 import React from 'react'
 import TitleHeader from '../components/TitleHeader'
 import ContactForm from '../components/ContactForm'
+import ContactExperience from '../components/ContactExperience'
 
 const Contact = () => {
   return (
@@ -19,7 +20,11 @@ const Contact = () => {
               <div className="md:col-span-5 col-span-12">
                 <ContactForm />
               </div>
-              <div className="md:col-span-7 col-span-12"></div>
+              <div className="md:col-span-7 col-span-12">
+                <div className="w-full h-full md:m-0 -mt-1000">
+                    <ContactExperience />
+                </div>
+              </div>
             </div>
           </div>
       </div>

@@ -1,12 +1,13 @@
 import React from "react";
 import GradientSpheres from "../components/GradientSpheres";
+import HeroExperince from "../components/HeroExperince";
 
 
 const Hero = () => {
   return (
     <section
       id="home"
-      className="w-screen h-dvh  relative text-white-50 px-10"
+      className="w-screen h-dvh overflow-hidden relative text-white-50 px-10"
     >
           <GradientSpheres sphere1Class={"gradient-sphere sphere-1"} sphere2Class={"gradient-sphere sphere-2"} />  
       <div className="w-full h-full flex-center">
@@ -36,6 +37,10 @@ const Hero = () => {
           </div>
 
         </div>
+      </div>
+
+      <div className="w-full h-full absolute inset-0 border">
+        <HeroExperince />
       </div>
     </section>
   );
